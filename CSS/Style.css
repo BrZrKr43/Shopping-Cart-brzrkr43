@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+/* Set the background color, animations, height, width, and center the body */
+body, html{
+    background-color:#0b0b0b;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    height: 100%;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Safari 4.0 - 8.0 */
+/*@-webkit-keyframes example {
+    0%   {background-color: rgb(70, 4, 4);}
+    25%  {background-color: #0b0b0b;}
+    50%  {background-color: rgb(65, 65, 5);}
+    100% {background-color: #0b0b0b;}
+  }
+  
+  /* Standard syntax */
+ /* @keyframes example {
+    0%   {background-color: rgb(71, 31, 31);}
+    25%  {background-color: #0b0b0b;}
+    50%  {background-color: rgb(65, 65, 21);}
+    100% {background-color: #0b0b0b;}
+}
+*/
+/* float the name of the website to the left */
+a.navbar-brand{
+    float:left;
+}
+
+/* set the color of the label in the form */
+label.control-label.col-sm-2{
+    color:#d63f36;
+}
+
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/4.jpg");
+  
+    /* Set a specific height */
+    height: 55%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+  
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: silver;
+}
+
+/* Set the font size of the h1 tags */
+h1{
+    font-size: 4em;
+}
+
+/* Set the font size and fontfamily for the captions of the thumbnails */
+div.caption{
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 20px;
+}
+
+/* Set the font size and font family of the paragraph with ID #home */
+p#home{
+    font-family: Arial!important;
+    font-size: 2em;
+}
+
+/* Set the color, font size and aligh the text to the center for IDS #LogIn #AboutUs #Home  */
+#LogIn, #AboutUs, #Home, #Shipping{
+    color:#d63f36;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+/* Set the border and the overflow of the horizontal rule */
+hr{
+    border:1px solid #d63f36;
+    overflow: hidden;
+}
+/* set bg color and border color for the buttons with class .btn.btn-primary */
+button.btn.btn-primary{
+    background-color: #d63f36;
+    border-color: silver;
+}
+/* set box shadow and bg color for the buttons with class .btn.btn-primary when hovered over */
+button.btn.btn-primary:hover{
+    box-shadow: silver;
+    background-color: #d1645e;
+}
+/* Set the color of level 5 subheadings */
+h5{
+    color:silver;
+}
+/* set the color of a tags */
+a{
+    color:silver;
+}
+/* set the color of links after they have been visited */
+a:visited{
+    color:#d63f36;
+}
+/* set the color of links when they are hovered over*/
+a:hover{
+    color:#d63f36;
+}
+/* set the width and height for the colums created with bootstrap */
+div.col-lg-3.col-md-4.col-6{
+    width:250;
+    height: auto;
+}
+/* Set the position, bg color, color and padding for the element with class .text-block */
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* set the bg color and border color and float the element with class .btn.btn-info.btn-sm */
+.btn.btn-info.btn-sm{
+    background-color: #d63f36;
+    border-color: silver;
+    float:right;
+}
+/* Set the bg color of the .btn.btn-info.btn-sm class when hovered over */
+.btn.btn-info.btn-sm:hover{
+    background-color: #d1645e;
+}
+/* set the color of the text next to the checkbox */
+div.checkbox{
+    color:#d63f36;
+}
+/* Set the color and align the text center */
+div#signup{
+    text-align: center;
+    color: silver;
+}
+/* set bg color and border color for button class .button.btn.btn-success.btn-block */
+button.btn.btn-success.btn-block{
+    background-color: #d63f36;
+    border-color: silver;
+}
+/* Set the color for the a tag with the ID #signLink */
+a#signlink{
+    color:#d63f36;
+}
+
+/* Set the margin, bg color, width, text-align, border and overflow for all sections */
+section{
+    margin-top: 4.5%;
+    background-color: rgba(192, 192, 192, 0.9);
+    width: 65%;
+    margin-right: 3%;
+    margin-left: 31%;
+    text-align: center;
+    border: 1px solid #d63f36;
+    border-radius: 10px;
+    overflow: hidden;
+    color:black;
+}
+/* Set the border , width margin bg color color and font family of the aside tags */
+aside{
+    border: 1px solid #d63f36;
+    border-radius:10px;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0b0b0b;
+    color:#d63f36;
+    margin-bottom: 7px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Set the padding and margin for  level 3 subheadings */
+h3{
+    padding-top: 0;
+    margin-top: 5px;
+}
+/* Set the div with ID blockquote to float left and center the text */
+div#blockquote{
+    float: left;
+    text-align: center;
+}
+/* set the padding of all imgs to 0 just to satisfy the instructions */
+img{
+    padding: 0.1px;
+}
+/* Set the bg color of thr span tags */
+span{
+    /* background-color: silver; */
+    color:black;
+}
+/* alight the text of all level 2 subheadings and set the color */
+h2{
+    text-align: center;
+    color:#d63f36;
+}
+/* set the width of all table data */
+td{
+    width:100%;
+}
+/* Set the width and float left the img with ID #homepgimg */
+#homepgimg{
+    width:30%;
+    float:left;
+}
+/* Set the width of the img with ID #homepgimg1 */
+#homepgimg1{
+    width:30%;
+}
+/* Set the hover effects for img with ID #homepgimg1 */
+#homepgimg1:hover{
+    opacity:0.5;
+    filter:alpha(opacity=50%);
+}
+/* Set the color and center text for level 4 subheadings */
+h4{
+    text-align: center;
+    color:#d63f36;
+}
+/* Set the color bg color border color and float right for the link with ID #shopbtn */
+a#shopbtn{
+    color:silver!important;
+    background-color: #d63f36;
+    border-color:silver; 
+    float:right;
+}
+/* Set the bg color and border for the table */
+table.table.table-bordered.table-hover{
+    background-color: lightgray;
+    border: 1px solid #d63f36;
+}
+/* Set the bg color and border for the table when hovered over */
+table.table.table-bordered.table-hover:hover{
+    background-color: silver;
+    color:#d63f36;
+}
+/* set the text alignment width margin and border of the unordered list */
+ul.list-group{
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right:auto;
+    border: 1px solid #d63f36;
+}
+/* Set the width margin text alignment and bg color of the aside tag with ID #homepg */
+aside.homepg{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color:silver;
+}
+
+#Catalog, #Checkout, #Sneaker-Item {
+    font-size: 3.5em;
+    color:#d63f36;
+    text-align: center;
+}
+
+.glyphicon.glyphicon-shopping-cart{
+    float:right;
+    font-size: 29px;
+    color:darkgray;
+}
+
+.shop-item-button:hover .glyphicon.glyphicon-shopping-cart {
+    color:#d63f36;
+}
+
+.shop-item-button{
+    float:right;
+    position: relative;
+    top: -38px;
+    left: -15px;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cart-row {
+    display: flex;
+    text-align: center;
+}
+
+.cart-item {
+    width: 45%;
+    text-align: center;
+}
+
+.cart-price {
+    width: 18%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #d63f36;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    position: relative;
+    left: 90px;
+}
+
+.btn-danger:hover {
+    background-color: red;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+    position: relative;
+    left: 105px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 2.5em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+    color: white;
+    background-color: #d63f36;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.cart-size-input{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+    position: relative;
+    top: -1px;
+    right: -90px;
+}
+
+.cart-price{
+    position:relative;
+    left: 95px;
+}
+
+#cart-modal{
+    float: left;
+    position: relative;
+    top:0.5px;
+    left:4px;
+    bottom:3px;
+}
+

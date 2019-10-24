@@ -1,0 +1,188 @@
+/* Set the font family, bg color, background position of the body */
+body{
+    font-family: Garamond, Arial, Helvetica, sans-serif;
+    background-color: rgb(39, 78, 2);
+    /*if the mentor would like to see the image I chose as a background instead of a background color*/
+    /*uncomment the following line*/
+    /*background-image: url("Cube-3D-Wallpapers-HD.jpg");*/
+    background-position: relative;
+}
+/* Set the bg color, height, overflow, border and border radius of the header section */
+header{
+    background-color: rgba(15, 15, 15, 0.856);
+    height: 8%;
+    overflow: hidden;
+    border: 1px solid rgb(136, 126, 131);
+    border-radius: 10px;
+}
+/* Set the margin, text alignment, color, font size, font family, display, margin, overflow and font style of the main heading */
+h1{
+    margin-top: 2.4%;
+    text-align: center;
+    color: white;
+    font-size: 3em; 
+    font-family: "Times New Roman";
+    display: inline-block;
+    margin-left: 2.5%;
+    overflow: hidden;
+    font-style: italic;
+}
+/* Set the margin, font style for all level 2 subheadings */
+h2{
+    margin: 10px;
+    font-style: italic;
+}
+/* Set the text-decoration, color, background image, border, padding, border-radius, display, overflow and margin of the anchor links in the nav bar */
+li a:link{
+    text-decoration: none;
+    color: rgb(131, 35, 51);
+    background-image: linear-gradient(rgb(148, 141, 141),rgb(255, 255, 255)) ;
+    border: 1px solid rgb(136, 126, 131);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 0.1px;
+    margin-right: 0.1px;
+}
+/* Set the text-decoration, color, background image, border, padding, border-radius, display, overflow and margin of the anchor links visited in the nav bar */
+li a:visited{
+    text-decoration: none;
+    color: rgba(15, 15, 15, 0.856);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(136, 126, 131);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+/* Set the text-decoration, color, background image, border, padding, border-radius, display, overflow and margin of the anchor links hovered over in the nav bar */
+li a:hover{
+    text-decoration: none;
+    color: rgb(136, 126, 131);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(136, 126, 131);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+/* Set the text-decoration, color, background image, border, padding, border-radius, display, overflow and margin of the anchor links active in the nav bar */
+li a:active{
+    text-decoration: none;
+    color: rgb(245, 96, 165);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(136, 126, 131);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    overflow: hidden;
+    transform: translateY(2px);
+}
+/* Set the margin and float the nav to the right */
+nav{
+    float:right;
+    margin-right: 38.5%;
+}
+/* remove the styling from the unordered list in the nav bar */
+nav ul{
+    list-style-type:none;
+}
+/*  Set the float, margin, border, overflow, bg color, height, and transition properties of the list items in the nav bar */
+nav li{
+    float:left;
+    margin-top: 9.5%;
+    margin-right:10px;
+    border: 1px solid rgb(136, 126, 131);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(34, 5, 10, 0.5);
+    height:43px;
+    transition-property: max-height;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+/* Set the box shadow for the list items which are hovered over */
+nav li:hover{
+    box-shadow: 0 0 3px 2px rgba(131, 35, 51, 0.5);
+}
+/*  Set the max height and the transform for a list item which is clicked on */
+nav li:active{
+    max-height: 40px;
+    transform: translateY(3px);
+}
+/* Set the margin, bg color, width, text-align, border and overflow for all sections */
+section{
+    margin-top: 4.5%;
+    background-color: rgba(235, 221, 221, 0.856);
+    width: 65%;
+    margin-right: 3%;
+    margin-left: 31%;
+    text-align: center;
+    border: 1px solid rgb(136, 126, 131);
+    border-radius: 10px;
+    overflow: hidden;
+}
+/* Set the margin of all paragraphs */
+p{
+    margin: 5px;
+}
+/* Set the margin, overflow, height, and width of the image with ID #WhiteKing  */
+#WhiteKing{
+    margin-left:40px;
+    margin-top: 15px;
+    margin-bottom:15px;
+    width: 80px;
+    height: 85px;
+    overflow: hidden;
+}
+/* Set the margin, width, float and border radius of all images */
+img{
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-bottom: 3%;
+    width: 25%;
+    float: left;
+    border-radius: 10px;
+}
+/* Set the box shadow property for images being hovered over */
+img:hover{
+    box-shadow: 0 0 3px 2px rgba(131, 35, 51, 0.5);
+}
+/* Set the bg color, height, width, overflow, border, color, margin, padding and text align for the footer */
+footer{
+    background-color: rgba(15, 15, 15, 0.856);
+    height: 8%;
+    width: 98%;
+    overflow: hidden;
+    border: 1px solid rgb(136, 126, 131);
+    border-radius: 10px;
+	color:white;
+	margin-right:auto;
+	margin-left:auto;
+    padding:10px;
+    text-align: center;
+}
+/* Set the overflow, float and margin for the nav with ID #footnav */
+#footnav{
+    overflow: hidden;
+    float:left;
+    margin-top: 0.7%;
+    margin-bottom: 3%;
+}
+/* Set the margin and font size for the p tag with ID #footp */
+#footp{
+    margin-top: 8%;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-bottom:0%;
+    font-size: 14px;
+}
+
+.glyphicon.glyphicon-shopping-cart{
+    float:right;
+    font-size: 30px;
+    top: -30px;
+    left: -15px;
+    color:#d63f36;
+  }

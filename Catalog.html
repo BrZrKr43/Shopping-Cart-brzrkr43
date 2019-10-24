@@ -1,0 +1,384 @@
+<!-- This is a HTML 5 Document -->
+<!DOCTYPE html>
+<!-- I have some elements which use Bootstrap and Java script and have thus included the links to bootstrap and JS -->
+<html lang="en">
+
+<head>
+  <title>My Online Store Catalog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="./JS/Shopping.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/Style.css">
+</head>
+
+<body>
+  <!-- Header with a nav bar and a brand name on the left and a search bar next to the nav bar -->
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">My Online Store</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li class="active">
+            <a href="Catalog.html">Catalog</a>
+          </li>
+          <li>
+            <a href="About Us.html">About</a>
+          </li>
+          <li>
+            <a href="Log In.html">Log In</a>
+          </li>
+          <li>
+            <a href="Checkout.html">Checkout</a>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-right" action="/action_page.php">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <!-- Hero image with a testimonial -->
+  <div class="hero-image">
+    <div class="hero-text">
+      <blockquote>"I love the range and the purchase and delivery was painless, Highly Reccommend!
+        <strong>My Online Store
+        </strong>"
+        <br>
+        <span>Faiz Valli</span>
+      </blockquote>
+    </div>
+  </div>
+  <hr>
+  <p id="Catalog">
+    <b>Catalog</b>
+  </p>
+
+  <hr>
+  <br>
+  <!-- The img-thumbnail class gives images a 1px rounded border -->
+  <!-- The img-responsive class makes images  automatically adjust to fit the size of the screen. -->
+  <!-- img-responsive class applies display: block; and max-width: 100%; and height: auto; to the image -->
+
+  <div class="row">
+    <!-- Thumbnail 1, with a button to see more details -->
+    <div class="col-md-3">
+      <div class="thumbnail text-box" data-toggle="modal">
+        <a href="Sneaker1.html">
+          <img class="shop-item-image" src="Images/adidas 1.jpg" alt="Picture of limited edition sneaker adidas" style="width:100%">
+        </a>
+        <div class="caption">
+          <p class="shop-item-title">Adidas Sneakers 1</p>
+          <div id="demo" class="collapse shop-item-price">
+            R 1350.00
+          </div>
+          <a class="btn btn-default" data-toggle="collapse" data-target="#demo">More Details</a>
+        </div>
+        <button class="shop-item-button">
+          <div class="glyphicon glyphicon-shopping-cart"></div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Thumbnail 2, with a button to see more details -->
+    <div class="col-md-3">
+      <div class="thumbnail text-box" data-toggle="modal">
+        <a href="Sneaker2.html">
+          <img class="shop-item-image" src="Images/adidas 2.jpg" alt="Picture of limited edition sneaker adidas" style="width:100%">
+        </a>
+        <div class="caption">
+          <p class="shop-item-title">Adidas Sneakers 2</p>
+          <div id="demo2" class="collapse shop-item-price">
+            R. 1350.00
+          </div>
+          <a class="btn btn-default" data-toggle="collapse" data-target="#demo2">More Details</a>
+        </div>
+        <button class="shop-item-button">
+          <div class="glyphicon glyphicon-shopping-cart"></div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Thumbnail 3, with a button to see more details -->
+    <div class="col-md-3">
+      <div class="thumbnail text-box" data-toggle="modal">
+        <a href="Sneaker3.html">
+          <img class="shop-item-image" src="Images/adidas 3.jpg" alt="Picture of limited edition sneaker adidas" style="width:100%">
+        </a>
+        <div class="caption">
+          <p class="shop-item-title">Adidas Sneakers 3</p>
+          <div id="demo3" class="collapse shop-item-price">
+            R. 1500.00
+          </div>
+          <a class="btn btn-default" data-toggle="collapse" data-target="#demo3">More Details</a>
+        </div>
+        <button class="shop-item-button">
+          <div class="glyphicon glyphicon-shopping-cart"></div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Thumbnail 4, with a button to see more details -->
+    <div class="col-md-3">
+      <div class="thumbnail text-box" data-toggle="modal">
+        <a href="Sneaker4.html">
+          <img class="shop-item-image" src="Images/adidas 6.jpg" alt="Picture of limited edition sneaker adidas" style="width:100%">
+        </a>
+        <div class="caption">
+          <p class="shop-item-title">Adidas Sneakers 4</p>
+          <div id="demo5" class="collapse shop-item-price">
+            R. 1400.00
+          </div>
+          <a class="btn btn-default" data-toggle="collapse" data-target="#demo5">More Details</a>
+        </div>
+        <button class="shop-item-button">
+          <div class="glyphicon glyphicon-shopping-cart"></div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Thumbnail 5, with a button to see more details -->
+  <div class="row">
+    <div class="col-md-3">
+      <div class="thumbnail text-box" data-toggle="modal">
+        <a href="Sneaker5.html">
+          <img class="shop-item-image" src="Images/adidas 7.jpg" alt="Picture of limited edition sneaker adidas" style="width:100%">
+        </a>
+        <div class="caption">
+          <p class="shop-item-title">Adidas Sneakers 5</p>
+          <div id="demo6" class="collapse shop-item-price">
+            R. 1500.00
+          </div>
+          <a class="btn btn-default" data-toggle="collapse" data-target="#demo6">More Details</a>
+        </div>
+        <button class="shop-item-button">
+          <div class="glyphicon glyphicon-shopping-cart"></div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Thumbnail 6, with a button to see more details -->
+    <div class="col-md-3">
+      <div class="thumbnail text-box" data-toggle="modal">
+        <a href="Sneaker6.html">
+          <img class="shop-item-image" src="Images/adidas 9.jpg" alt="Picture of limited edition sneaker adidas" style="width:100%">
+        </a>
+        <div class="caption">
+          <p class="shop-item-title">Adidas Sneakers 6</p>
+          <div id="demo7" class="collapse shop-item-price">
+            R. 1350.00
+          </div>
+          <a class="btn btn-default" data-toggle="collapse" data-target="#demo7">More Details</a>
+        </div>
+        <button class="shop-item-button">
+          <div class="glyphicon glyphicon-shopping-cart"></div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Thumbnail 7, with a button to see more details -->
+    <div class="col-md-3">
+      <div class="thumbnail text-box" data-toggle="modal">
+        <a href="Sneaker7.html">
+          <img class="shop-item-image" src="Images/adidas 13.jpg" alt="Picture of limited edition sneaker adidas" style="width:100%">
+        </a>
+        <div class="caption">
+          <p class="shop-item-title">Adidas Sneakers 7</p>
+          <div id="demo8" class="collapse shop-item-price">
+            R. 1550.00
+          </div>
+          <a class="btn btn-default" data-toggle="collapse" data-target="#demo8">More Details</a>
+        </div>
+        <button class="shop-item-button">
+          <div class="glyphicon glyphicon-shopping-cart"></div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Thumbnail 8, with a button to see more details -->
+    <div class="col-md-3">
+      <div class="thumbnail text-box" data-toggle="modal">
+        <a href="Sneaker8.html">
+          <img class="shop-item-image" src="Images/nike 1.png" alt="Picture of Nike limited edition" style="width:100%">
+        </a>
+        <div class="caption">
+          <p class="shop-item-title">Nike Sneakers 1</p>
+          <div id="demo9" class="collapse shop-item-price">
+            R. 1700.00
+          </div>
+          <a class="btn btn-default" data-toggle="collapse" data-target="#demo9">More Details</a>
+        </div>
+        <button class="shop-item-button">
+          <div class="glyphicon glyphicon-shopping-cart"></div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Thumbnail 9, with a button to see more details -->
+    <div class="col-md-3">
+      <div class="thumbnail text-box" data-toggle="modal">
+        <a href="Sneaker9.html">
+          <img class="shop-item-image" src="Images/adidas 2.jpg" alt="Lights" style="width:100%">
+        </a>
+        <div class="caption">
+          <p class="shop-item-title">Adidas Sneakers 8</p>
+          <div id="demo10" class="collapse shop-item-price">
+            R. 1350.00
+          </div>
+          <a class="btn btn-default" data-toggle="collapse" data-target="#demo10">More Details</a>
+        </div>
+        <button class="shop-item-button">
+          <div class="glyphicon glyphicon-shopping-cart"></div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Thumbnail 10, with a button to see more details -->
+    <div class="col-md-3">
+      <div class="thumbnail text-box" data-toggle="modal">
+        <a href="Sneaker10.html">
+          <img class="shop-item-image" src="Images/adidas 12.jpg" alt="Picture of Adidas limited edition" style="width:100%">
+        </a>
+        <div class="caption">
+          <p class="shop-item-title">Adidas Sneakers 9</p>
+          <div id="demo11" class="collapse shop-item-price">
+            R. 1600.00
+          </div>
+          <a class="btn btn-default" data-toggle="collapse" data-target="#demo11">More Details</a>
+        </div>
+        <button class="shop-item-button">
+          <div class="glyphicon glyphicon-shopping-cart"></div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Thumbnail 11, with a button to see more details -->
+    <div class="col-md-3">
+      <div class="thumbnail text-box" data-toggle="modal">
+        <a href="Sneaker11.html">
+          <img class="shop-item-image" src="Images/nike 3.jpg" alt="Picture of Nike limited edition" style="width:100%">
+        </a>
+        <div class="caption">
+          <p class="shop-item-title">Nike Sneakers 2</p>
+          <div id="demo12" class="collapse shop-item-price">
+            R. 1400.00
+          </div>
+          <a class="btn btn-default" data-toggle="collapse" data-target="#demo12">More Details</a>
+        </div>
+        <button class="shop-item-button">
+          <div class="glyphicon glyphicon-shopping-cart"></div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Thumbnail 12, with a button to see more details -->
+    <div class="col-md-3">
+      <div class="thumbnail text-box" data-toggle="modal">
+        <a href="Sneaker12.html">
+          <img class="shop-item-image" src="Images/adidas 11.jpg" alt="Picture of adidas limited edition" style="width:100%">
+        </a>
+        <div class="caption">
+          <p class="shop-item-title">Adidas Sneakers 10</p>
+          <div id="demo13" class="collapse shop-item-price">
+            R. 1350.00
+          </div>
+          <a class="btn btn-default" data-toggle="collapse" data-target="#demo13">More Details</a>
+        </div>
+        <button class="shop-item-button">
+          <div class="glyphicon glyphicon-shopping-cart"></div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <hr>
+  <section class="container-fluid content-section">
+    <h2 class="section-header">Cart</h2>
+    <div class="cart-row">
+      <span class="col-md-3 cart-item cart-header cart-column">ITEM</span>
+      <span class="col-sm-3 cart-item cart-header cart-column">Size</span>
+      <span class="col-md-4 cart-header cart-column">PRICE</span>
+      <span class="col-md-3 cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="cart-total-price">0</span>
+    </div>
+    <a href="Checkout.html">
+      <button class="btn btn-primary" type="button">Go to Checkout</button>
+    </a>
+  </section>
+  <hr>
+  <!-- Footer -->
+  <footer class="page-footer font-small blue pt-4">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+          <!-- Content -->
+          <br>
+          <h5 class="text-uppercase">My Online Store hopes that you enjoy your shopping experience</h5>
+          <p>Thank YOU for your Patronage!</p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-6 mb-md-0 mb-6">
+          <!-- Links -->
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="Catalog.html">Catalog</a>
+            </li>
+            <li>
+              <a href="About Us.html">About</a>
+            </li>
+            <li>
+              <a href="Log In.html">Log In</a>
+            </li>
+            <li>
+              <a href="https://m.facebook.com/profile.php?id=401728736967669">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://strawhatdesigns.com"> StrawHatDesigns.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>
